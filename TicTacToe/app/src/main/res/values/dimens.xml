@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text Size  -->
+    <dimen name = "text_large">20sp</dimen>
+    <dimen name = "text_medium">16sp</dimen>
+    <dimen name = "text_small">12sp</dimen>
+    <dimen name = "text_xsmall">8sp</dimen>
+    <dimen name="dimen_title_large">28sp</dimen>
+    <dimen name="dimen_textview_hint">20sp</dimen>
+    <dimen name="dimen_button_title">22sp</dimen>
+
+
+     <!-- Margin -->
+    <dimen name = "margin_xxxsmall">1dp</dimen>
+    <dimen name = "margin_xxsmall">2dp</dimen>
+    <dimen name = "margin_xsmall">3dp</dimen>
+    <dimen name = "margin_small">4dp</dimen>
+    <dimen name = "margin_medium">8dp</dimen>
+    <dimen name = "margin_large">12dp</dimen>
+    <dimen name = "margin_xlarge">16dp</dimen>
+
+    <!-- dimen -->
+    <dimen name="dimen_button_height">60dp</dimen>
+    <dimen name="dimen_margin_70">70dp</dimen>
+    <dimen name="dimen_margin_50">50dp</dimen>
+    <dimen name="dimen_3cross3_cells_layout_width">400dp</dimen>
+    <dimen name="dimen_3cross3_cells_layout_height">450dp</dimen>
+    <dimen name="dimen_3cross3_gridlayout_padding">32dp</dimen>
+    <dimen name="dimen_3cross3_cells_width">10dp</dimen>
+
+</resources>

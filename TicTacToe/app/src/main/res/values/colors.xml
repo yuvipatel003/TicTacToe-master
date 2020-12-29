@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#61392D</color>
+    <color name="colorAccent">#B2F169</color>
+
+    <color name="colorPrimaryGame">#2E2346</color>
+    <color name="colorPrimaryDark">#673AB7</color>
+
+    <color name="colorLightPrimary">#BAABDA</color>
+    <color name="colorLightAccent">#C9F1A6</color>
+
+    <color name="cell_color">#CE1B0E</color>
+    <color name="textColor">#E4DCF5</color>
+
+<!--    <color name="colorPrimaryGame">#2E2346</color>-->
+</resources>

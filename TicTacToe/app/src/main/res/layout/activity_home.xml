@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryGame"
+    android:id="@+id/constraintLayoutHome">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.HomeActivity"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPlayerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.3"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="@string/str_players_detail"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/dimen_title_large"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextPlayerOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:hint="@string/str_player_1_name"
+            android:inputType="textPersonName|textCapWords"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/colorLightPrimary"
+            android:textSize="@dimen/dimen_textview_hint" />
+
+        <EditText
+            android:id="@+id/editTextPlayerTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:hint="@string/str_player_2_name"
+            android:inputType="textPersonName|textCapWords"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/colorLightPrimary"
+            android:textSize="@dimen/dimen_textview_hint" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPlayThreeCrossThree"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_button_height"
+        android:layout_marginTop="@dimen/dimen_margin_50"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:text="@string/str_play_3_x_3"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_button_title"
+        android:textAllCaps="false"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorPrimaryGame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutPlayerDetails"/>
+
+    <Button
+        android:id="@+id/btnPlayFourCrossFour"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_button_height"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/str_play_4_x_4"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_button_title"
+        android:textAllCaps="false"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorPrimaryGame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayThreeCrossThree"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnPlayFiveCrossFive"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dimen_button_height"-->
+<!--        android:layout_marginRight="@dimen/margin_small"-->
+<!--        android:layout_marginLeft="@dimen/margin_small"-->
+<!--        android:layout_marginBottom="@dimen/margin_large"-->
+<!--        android:text="@string/str_play_5_x_5"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="@dimen/dimen_button_title"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:background="@drawable/button_background"-->
+<!--        android:textColor="@color/colorPrimaryGame"/>-->
+
+    <Button
+        android:id="@+id/btnRecentResults"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_button_height"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:text="@string/str_recent_results"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_button_title"
+        android:textAllCaps="false"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorPrimaryGame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayFourCrossFour"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
