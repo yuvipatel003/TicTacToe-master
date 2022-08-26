@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryGame">
+
+    <LinearLayout
+        android:id="@+id/recyclerviewTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorLightPrimary">
+
+        <TextView
+            android:id="@+id/textMatchMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_medium"
+            android:text="@string/str_mode"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:textColor="@color/colorPrimaryGame"
+            android:layout_marginTop="@dimen/margin_xxsmall"
+            android:layout_marginBottom="@dimen/margin_xxsmall"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            android:text="@string/str_players"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:textColor="@color/colorPrimaryGame"
+            android:layout_marginTop="@dimen/margin_xxsmall"
+            android:layout_marginBottom="@dimen/margin_xxsmall"/>
+
+        <TextView
+            android:id="@+id/textMatchWinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_winner"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            android:layout_weight="0.80"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:textColor="@color/colorPrimaryGame"
+            android:layout_marginTop="@dimen/margin_xxsmall"
+            android:layout_marginBottom="@dimen/margin_xxsmall"/>
+
+        <TextView
+            android:id="@+id/textMatchDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_date"
+            android:layout_weight="0.94"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:textColor="@color/colorPrimaryGame"
+            android:layout_marginTop="@dimen/margin_xxsmall"
+            android:layout_marginBottom="@dimen/margin_xxsmall"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerviewTitleLayout"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xxsmall"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_xxsmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewDivider"
+        android:background="@color/colorPrimaryGame"
+        />
+
+    <Button
+        android:id="@+id/btnLoadAll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_button_height"
+        android:text="@string/str_load_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_button_title"
+        android:textAllCaps="false"
+        android:background="@drawable/button_background"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
